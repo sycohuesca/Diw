@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>El Buen Llantar</title>
+	<link rel="shortcut icon" href="imagenes/log2.ico">
+    <!-- CSS de Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/ArmandoLess.css" rel="stylesheet" type="text/css">
+    <!-- librerías opcionales que activan el soporte de HTML5 para IE8 -->
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+</head>
+
+<body>
+    <div class=" container-fluid">
+        <div class="container-fluid" id="cabecera">
+        </div>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Menu</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul id="barraNavegador" class="nav navbar-nav">
+                        <li id="inicioNav" class="inicio"><a href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="active dropdown">
+                            <a href="#" class=" active dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Nuestros Platos <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="carta.html">La Carta</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li class="active"><a href="menu.html">Menus</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="reservaNav"><a href="reserva.html">Reservas</a>
+                        </li>
+                        <li><a href="galeria.html">Galeria</a>
+                        </li>
+                        <li><a href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <ol class="breadcrumb">
+            <li><a href="index.html">Inicio</a>
+            </li>
+            <li class="active">Nuestros Platos</li>
+            <li class="active">Los Menús</li>
+        </ol>
+        <div class="jumbotron">
+            <div class="row">
+                <h2>Los Menus</h2>
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <img class="img-thumbnail" src="imagenes/Platos/menu.jpg" alt="menu.jpg">
+                        <div class="caption">
+                            <h2>Menú A: Paella de marisco</h2>
+                            <h3><strong>Precio:23 €.</strong></h3>
+                            <p>Escelente plato de jamos con esparrahos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <img class="img-thumbnail" src="imagenes/Platos/menu2.jpg" alt="menu2.jpg">
+                        <div class="caption">
+                            <h3>Menú B: Parrillada de marisco</h3>
+                            <h2>Precio:45 €.</h2>
+                            <p>Magnifico surtido de puezas de masrisco , no recomendado por el médico.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <img class="img-thumbnail" src="imagenes/Platos/menu3.jpg" alt="menu3.jpg">
+                        <div class="caption">
+                            <h3>Menú C:Parrillada de carne</h3>
+                            <h2>Precio:17 €.</h2>
+                            <p>Escelente surtido de distintos tipos de carne que saciarán al más exigente.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <img class="img-thumbnail" src="imagenes/Platos/menu4.jpg" alt="menu4.jpg">
+                        <div class="caption">
+                            <h3>Menú D: Calzotada</h3>
+                            <h2>Precio:18 €.</h2>
+                            <p>Fantástico plato catalán acompañado de la sala romescu y hecho al fuego vivo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center">Todos los menus son para mínimo dos personas incluidas en el precio, con entrantes de la casa, pan bebida y postre.</p>
+        </div>
+    </div>
+    <a class="scroll-top">Ir Arriba</a>
+    <footer id="pie" class="footer">
+    </footer>
+    <!-- Librería jQuery requerida por los plugins de JavaScript -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Todos los plugins JavaScript de Bootstrap (también puedes
+         incluir archivos JavaScript individuales de los únicos
+         plugins que utilices) -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>El Buen Llantar</title>
+    <link rel="shortcut icon" href="imagenes/log2.ico">
+    <!-- CSS de Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/ArmandoLess.css" rel="stylesheet" type="text/css">
+    <!-- librerías opcionales que activan el soporte de HTML5 para IE8 -->
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="container-fluid" id="cabecera">
+        </div>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Menu</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul id="barraNavegador" class="nav navbar-nav">
+                        <li id="inicioNav" class="active inicio"><a href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Nuestros Platos <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="carta.html">La Carta</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="menu.html">Menus</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="reservaNav"><a href="reserva.html">Reservas</a>
+                        </li>
+                        <li><a href="galeria.html">Galeria</a>
+                        </li>
+                        <li><a href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <ol class="breadcrumb">
+            <li class="active">Inicio</li>
+        </ol>
+        <div class="jumbotron">
+            <h2>Restaurante el Buen Llantar</h2>
+            <div class="micentro">
+                <div class=" embed-responsive embed-responsive-16by9">
+                    <video controls poster="video/presentacion.jpg" src="video/mivideo.mp4"></video>
+                </div>
+            </div>
+            <p class="text-center"><small><a data-toggle="modal" data-target="#myModal"  >Resumen Textual Alternativo</a></small>
+            </p>
+            <div class="media-body">
+                <p class="text-justify">En el restaurante el Buen Llantar mimamos nuestros productos haciendo auténticas obras de artes gastronómicas. Desde nuestro primer plato al último esta cuidadosamente seleccionado y cuidado todos los procesos de elaboración y presentación, todo ello en aglobado en un sitio con unas vistas privilegiadas en un entorno que transportan a nuestros comensales a la <strong>Valhala</strong>.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">Resumen Textual Alternativo</h4>
+                </div>
+                <div class="modal-body">
+                    <p class="text-justify">En este video se observa la elaboración de distintos platos de nuestro selecto menú. En él se puede ver la elaboración y el cuidado con que nuestros chefs cuidan elabora nuestros platos, cuidando todos los detalles, y siempre intentando innovar y deslumbrar tanto por la vista como por el paladar a nuestros comensales.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="scroll-top">Ir Arriba</a>
+    <footer id="pie" class="footer">
+    </footer>
+    <!-- Librería jQuery requerida por los plugins de JavaScript -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Todos los plugins JavaScript de Bootstrap (también puedes
+         incluir archivos JavaScript individuales de los únicos
+         plugins que utilices) -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>El Buen Llantar</title>
+	<link rel="shortcut icon" href="imagenes/log2.ico">
+    <!-- CSS de Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/ArmandoLess.css" rel="stylesheet" type="text/css">
+<!-- Css del calendario -->
+    <link rel="stylesheet" type="text/css" href="css/jscal2.css" />
+    <link rel="stylesheet" type="text/css" href="css/border-radius.css" />
+    <link rel="stylesheet" type="text/css" href="css/steel/steel.css" />
+
+    <!-- librerías opcionales que activan el soporte de HTML5 para IE8 -->
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="js/jscal2.js"></script>
+    <script src="js/lang/es.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <div class="container-fluid" id="cabecera">
+        </div>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Menu</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul id="barraNavegador" class="nav navbar-nav">
+                        <li id="inicioNav" class=" inicio"><a href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Nuestros Platos <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="carta.html">La Carta</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="menu.html">Menus</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="active" id="reservaNav"><a href="reserva.html">Reservas</a>
+                        </li>
+                        <li><a href="galeria.html">Galeria</a>
+                        </li>
+                        <li><a href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <ol class="breadcrumb">
+            <li><a href="index.html">Inicio</a>
+            </li>
+            <li class="active">Reservas</li>
+        </ol>
+        <div class="jumbotron">
+            <h2>Formulario de Reservas</h2>
+            <div class="micentro">
+                    <form onsubmit="return enviar()" role="form">
+                    <div class="form-group">
+                        <label for="nombre">Nombre de la Reserva:</label>
+                        <input required type="text" class="form-control" id="nombre" placeholder="Introduce el  Nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="ejemplo_email_1">Email de contacto:</label>
+                        <input required type="email" class="form-control" id="ejemplo_email_1" placeholder="Introduce tu email">
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono de contacto:</label>
+                        <input required type="number" class="form-control" id="telefono" placeholder="Introduce un telefono de contacto">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="personas">Número de comensales:</label>
+                        <input required type="number" class="form-control" id="personas" placeholder="Introduce los comensales aproximados">
+                    </div>
+                    <div class="form-group">
+                        <label for="personas">Otra información a tener en cuenta.</label>
+                        <textarea class="form-control" rows="4"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="f_date1">Elige fecha y hora</label>
+                        <div class="input-group date'">
+                            <input type="text" class="form-control" id="f_date1" />
+                            <span class="input-group-addon">
+                        <button type="button" id="f_btn1"><span class="glyphicon glyphicon-calendar"></span>
+                            </button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="opciones" id="comida" value="commida" checked> Comida
+                            </label>
+                        </div>
+
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="opciones" id="cena" value="cena"> Cena
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input required type="checkbox"> <a data-toggle="modal" data-target="#myModal">Acepta nuestra politca de datos</a>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-success">Enviar</button>
+                    </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">Politica de Privacidad</h4>
+                </div>
+                <div class="modal-body">
+                    <p class="text-justify">En cumplimiento de la Ley Orgánica 15/1999, de 13 de diciembre, de Protección de Datos de Carácter Personal, le informamos que los datos personales que nos suministre a través del portal www.elbuenllantar.com, vía telefónica, o por correo electrónico serán tratados de forma confidencial y pasarán a formar parte de un fichero titularidad de Armando TECHNOLOGIES, S.L. que ha sido debidamente inscrito en la Agencia Española de Protección de Datos (www.agpd.es). Sus datos personales serán utilizados para atender su petición de información, la gestión y prestación de los servicios ofrecidos por Armando TECHNOLOGIES, y para el envío de futuras comunicaciones comerciales que pudieran ser de su interés. Sus datos podrán ser cedidos a Telefónica de España S.A.U. con fines publicitarios o comerciales.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="scroll-top">Ir Arriba</a>
+    <footer id="pie" class="footer">
+    </footer>
+    <!-- Librería jQuery requerida por los plugins de JavaScript -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Todos los plugins JavaScript de Bootstrap (también puedes
+         incluir archivos JavaScript individuales de los únicos
+         plugins que utilices) -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+        Calendar.setup({
+            inputField: "f_date1",
+            trigger: "f_btn1",
+            onSelect: function () {
+                this.hide()
+            },
+            showTime: 12,
+            dateFormat: "%Y-%m-%d %I:%M %p"
+        });
+
+        function enviar() {
+                alert("Formulario enviado correctamente");
+            }
+            //]]>
+    </script>
+</body>
+
+</html>

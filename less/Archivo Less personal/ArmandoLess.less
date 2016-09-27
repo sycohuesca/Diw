@@ -1,0 +1,170 @@
+
+/*
+* Mixins
+*/
+.max-width.height {
+    max-width: 100%;
+    max-height: 100%;
+}
+/*
+* Variables
+*/
+@colorSubrayado: #DED800;
+@colorLetra: #FFFC07;
+@sombra: #FFFFFF;
+@colorPie : #a9a9a9;
+
+iframe#mimapa {
+   .max-width.height;
+    width: 600px;
+    height: 480px;
+}
+.logo {
+    height: 150px;
+    width:auto;
+}
+.navbar {
+    li:hover {
+        border-top-style: solid;
+        border-top-width: thick;
+        border-top-color: @colorSubrayado;
+    }
+}
+.micentro {
+    width: 600px;
+    max-width: 90%;
+    height: auto;
+    margin: auto;
+}
+div#cabecera {
+    text-shadow: @sombra 0.1em 0.1em 0.2em;
+    background-image: url(../imagenes/restaurante1.jpg);
+    color: @colorLetra;
+}
+div#primero {
+    div {
+        & > p {
+            padding-top: 50px;
+            padding-left: 50px;
+        }
+    }
+}
+img.idioma {
+    float: right;
+}
+div#nombre {
+    padding-top: 20px;
+}
+body {
+    background-image: url(../imagenes/fondo.jpg);
+}
+#pie {
+    background-color: @colorPie;
+    height: auto;
+}
+#m-soc7 {
+    margin: 18px 0 0 10px;
+    padding: 0;
+    width: 280px;
+    height: 66px;
+    li {
+        list-style: none;
+        margin: 4px;
+        padding: 0;
+        float: left;
+        border: none;
+        a {
+            background: url(../imagenes/sprite7-compartidisimo.png) no-repeat 0 0;
+            margin: 0;
+            padding: 0;
+            display: block;
+            position: relative;
+            width: 48px;
+            height: 48px;
+            overflow: visible;
+            span {
+                background: #555;
+                position: absolute;
+                top: -10px;
+                width: auto;
+                left: 0;
+                opacity: 0;
+                padding: 3px;
+                text-align: left;
+                text-decoration: none;
+                color: #fff;
+                white-space: nowrap;
+                border-radius: 3px;
+                font-size: 12px;
+                -webkit-transition: all 0.25s ease-in-out;
+                -moz-transition: all 0.25s ease-in-out;
+                -o-transition: all 0.25s ease-in-out;
+                -ms-transition: all 0.25s ease-in-out;
+                transition: all 0.25s ease-in-out;
+            }
+        }
+        a.twitter {
+            background-position: 0 0;
+        }
+        a.facebook {
+            background-position: -48px 0;
+        }
+        a.google {
+            background-position: -96px 0;
+        }
+        a.youtube {
+            background-position: -144px 0;
+        }
+        a.rss {
+            background-position: -192px 0;
+        }
+        a.twitter:hover {
+            background-position: 0 -48px;
+        }
+        a.facebook:hover {
+            background-position: -48px -48px;
+        }
+        a.google:hover {
+            background-position: -96px -48px;
+        }
+        a.youtube:hover {
+            background-position: -144px -48px;
+        }
+        a.rss:hover {
+            background-position: -192px -48px;
+        }
+        a:hover {
+            text-decoration: none;
+            span {
+                top: -24px;
+            }
+        }
+    }
+}
+.scroll-top {
+    width: 40px;
+    height: 40px;
+    opacity: 0.3;
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    display: none;
+    text-indent: -9999px;
+    z-index: 1000;
+    background: url('../imagenes/arriba.png') no-repeat;
+}
+.scroll-top:hover {
+    opacity: 0.8;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -o-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+    transition: 0.3s all;
+}
+.carousel-inner &>.item &>img,.carousel-inner &>.item &>a &>img {
+    width: 40%;
+    margin: auto;
+}
+img,a {
+    cursor: pointer;
+}
